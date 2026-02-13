@@ -1,0 +1,50 @@
+.crop-container{
+    padding:40px;
+}
+
+.page-title{
+    text-align:center;
+    font-size:32px;
+    margin-bottom:10px;
+}
+
+.season-info{
+    text-align:center;
+    font-size:16px;
+    margin-bottom:35px;
+    color:#555;
+}
+
+.crop-grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap:25px;
+}
+
+.crop-card{
+    padding:30px 15px;
+    text-align:center;
+    border:1px solid #ccc;
+    border-radius:12px;
+    background:#f9f9f9;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.crop-card:hover{
+    background:#4caf50;
+    color:white;
+    transform:translateY(-6px);
+}
+
+.illegal{
+    border:2px dashed red;
+    color:red;
+    background:#fff0f0;
+}
+
+.warning{
+    border:2px dashed orange;
+    color:orange;
+}

@@ -1,0 +1,369 @@
+/* =============================== */
+/* HOME PAGE STYLES - MODERN VERSION */
+/* =============================== */
+
+.home-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* =============================== */
+/* MAIN IMAGE - ANIMATED           */
+/* =============================== */
+
+.home-main-img {
+    margin: 30px 0 40px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.home-main-img:hover {
+    transform: scale(1.02);
+}
+
+.home-main-img img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.home-main-img:hover img {
+    transform: scale(1.05);
+}
+
+/* =============================== */
+/* INTRO TEXT - ENHANCED           */
+/* =============================== */
+
+.home-info {
+    max-width: 1000px;
+    margin: 0 auto 50px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #2f2f2f;
+    background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+    padding: 30px;
+    border-radius: 12px;
+    border-left: 5px solid #2e7d32;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    animation: fadeInUp 0.9s ease-out 0.2s both;
+}
+
+/* =============================== */
+/* SECTION TITLES - MODERN         */
+/* =============================== */
+
+.section-title {
+    margin: 60px 0 30px;
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #1b5e20;
+    text-align: center;
+    position: relative;
+    padding-bottom: 12px;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.section-title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: #FF9800;
+    border-radius: 3px;
+}
+
+/* =============================== */
+/* BOOTSTRAP CARD ANIMATIONS       */
+/* =============================== */
+
+/* Container animations */
+.container.mt-4 {
+    animation: fadeInUp 0.8s ease-out 0.3s both;
+}
+
+/* Card column animations with stagger */
+.row > .col-md-4 {
+    animation: fadeInUp 0.6s ease-out both;
+    animation-fill-mode: both;
+}
+
+/* Staggered animation delays */
+.row > .col-md-4:nth-child(1) { animation-delay: 0.3s; }
+.row > .col-md-4:nth-child(2) { animation-delay: 0.4s; }
+.row > .col-md-4:nth-child(3) { animation-delay: 0.5s; }
+.row > .col-md-4:nth-child(4) { animation-delay: 0.3s; }
+.row > .col-md-4:nth-child(5) { animation-delay: 0.4s; }
+.row > .col-md-4:nth-child(6) { animation-delay: 0.5s; }
+
+/* Enhanced Bootstrap Cards */
+.card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;
+    position: relative;
+    background: white;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1) !important;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(46, 125, 50, 0.1), rgba(27, 94, 32, 0.05));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.card:hover::before {
+    opacity: 1;
+}
+
+.card:hover {
+    transform: translateY(-15px) scale(1.02);
+    box-shadow: 0 25px 50px rgba(46, 125, 50, 0.2) !important;
+}
+
+/* Card Image Animation */
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.1);
+}
+
+/* Card Body */
+.card-body {
+    position: relative;
+    z-index: 2;
+    background: white;
+    padding: 1.5rem;
+}
+
+/* Card Title */
+.card-title {
+    color: #1b5e20;
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    position: relative;
+    padding-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.card-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: #4CAF50;
+    transition: background 0.3s ease;
+}
+
+.card:hover .card-title {
+    color: #2E7D32;
+}
+
+.card:hover .card-title::after {
+    background: #2E7D32;
+}
+
+/* Card Text */
+.card-text {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+/* Enhanced Button Styling */
+.btn-success {
+    background: linear-gradient(135deg, #4CAF50, #2E7D32);
+    border: none;
+    border-radius: 8px;
+    padding: 10px 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-success::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+}
+
+.btn-success:hover {
+    background: linear-gradient(135deg, #45a049, #1B5E20);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(76, 175, 80, 0.3);
+}
+
+.btn-success:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+.btn-sm {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+}
+
+/* =============================== */
+/* ANIMATIONS                      */
+/* =============================== */
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 5px 15px rgba(46, 125, 50, 0.1);
+    }
+    50% {
+        box-shadow: 0 15px 30px rgba(46, 125, 50, 0.2);
+    }
+    100% {
+        box-shadow: 0 5px 15px rgba(46, 125, 50, 0.1);
+    }
+}
+
+/* =============================== */
+/* RESPONSIVE DESIGN               */
+/* =============================== */
+
+@media (max-width: 900px) {
+    .home-container {
+        padding: 30px 15px;
+    }
+    
+    .home-main-img img {
+        height: 300px;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+        margin: 40px 0 20px;
+    }
+    
+    .home-info {
+        padding: 20px;
+        font-size: 1rem;
+        margin: 0 auto 30px;
+    }
+    
+    .card:hover {
+        transform: translateY(-8px) scale(1.01);
+    }
+    
+    /* Reset animation delays on mobile for faster load */
+    .row > .col-md-4 {
+        animation-delay: 0.1s !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .home-container {
+        padding: 20px 10px;
+    }
+    
+    .home-main-img img {
+        height: 250px;
+    }
+    
+    .card-img-top {
+        height: 180px;
+    }
+    
+    .btn-success, .btn-sm {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* ================================================= */
+/* HOME PAGE NAVBAR – MATCH OTHER PAGES EXACTLY     */
+/* (Bootstrap override – HOME ONLY)                 */
+/* ================================================= */
+
+/* Reset bootstrap impact on navbar */
+.navbar,
+.navbar * {
+    font-family: "Inter", Arial, sans-serif !important;
+    box-sizing: border-box;
+}
+
+/* Center navbar exactly like crop page */
+.navbar .nav-left {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Same link size, padding & weight */
+.navbar .nav-item > a {
+    padding: 14px 22px !important;
+    font-size: 15px !important;
+    font-weight: 500 !important;
+    line-height: normal !important;
+}
+
+/* Remove bootstrap ul/li styling */
+.navbar ul {
+    list-style: none !important;
+}
+
+/* Dropdown spacing consistency */
+.navbar .dropdown-menu {
+    margin-top: 0 !important;
+    padding: 8px 0 !important;
+    border-radius: 8px !important;
+}

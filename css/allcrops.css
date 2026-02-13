@@ -1,0 +1,142 @@
+/* PAGE CONTAINER                        */
+
+.crop-detail {
+    max-width: 1100px;
+    margin: auto;
+    padding: 45px;
+}
+
+/* MAIN CROP TITLE                       */
+
+.crop-detail h1 {
+    margin-bottom: 25px;
+    color: #1b5e20; /* dark forest green */
+    font-size: 36px;
+}
+
+/* SECTION HEADINGS                      */
+
+.crop-detail h2 {
+    margin-top: 35px;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #cfd8dc;
+    color: #2e7d32;
+    font-size: 22px;
+}
+
+/* PARAGRAPHS                            */
+
+.crop-detail p {
+    line-height: 1.8;
+    margin-bottom: 12px;
+    color: #2f2f2f;
+    font-size: 15px;
+}
+
+/* LISTS                                 */
+
+.crop-detail ul {
+    margin-left: 22px;
+    margin-bottom: 12px;
+}
+
+.crop-detail ul li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+/* INFO / HIGHLIGHT BOXES                */
+
+.info-box {
+    background: #e8f5e9;        /* soft leaf green */
+    border-left: 5px solid #2e7d32;
+    padding: 18px;
+    margin: 18px 0;
+    border-radius: 8px;
+}
+
+.info-box ul {
+    margin-left: 18px;
+}
+
+/* WARNING BOX (RESTRICTED / LEGAL)      */
+
+.warning-box {
+    background: #fbe9e7;        /* soft soil/orange tone */
+    border-left: 5px solid #8d6e63;
+    padding: 18px;
+    margin: 18px 0;
+    border-radius: 8px;
+}
+
+/* DANGER BOX (ILLEGAL / HIGH RISK)      */
+
+.danger-box {
+    background: #ffebee;
+    border-left: 5px solid #c62828;
+    padding: 18px;
+    margin: 18px 0;
+    border-radius: 8px;
+}
+
+/* TABLES (VARIETIES, YIELD, ETC.)       */
+
+.crop-detail table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.crop-detail table th,
+.crop-detail table td {
+    border: 1px solid #cfd8dc;
+    padding: 12px;
+    text-align: left;
+}
+
+.crop-detail table th {
+    background: #e8f5e9;
+    color: #1b5e20;
+    font-weight: 600;
+}
+
+/* BREADCRUMB / BACK NAVIGATION          */
+
+.crop-nav {
+    max-width: 1100px;
+    margin: 18px auto 0;
+    padding: 10px 45px;
+    font-size: 14px;
+    color: #555;
+}
+
+.crop-nav a {
+    text-decoration: none;
+    color: #2e7d32;
+    font-weight: 600;
+}
+
+.crop-nav a:hover {
+    text-decoration: underline;
+    color: #1b5e20;
+}
+
+
+/* RESPONSIVE ADJUSTMENTS                */
+
+@media (max-width: 900px) {
+    .crop-detail {
+        padding: 30px;
+    }
+
+    .crop-nav {
+        padding: 10px 30px;
+    }
+
+    .crop-detail h1 {
+        font-size: 30px;
+    }
+}

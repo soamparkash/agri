@@ -1,0 +1,66 @@
+/* ===================================== */
+/* HOME SECTION PAGES (COMMON CSS)       */
+/* Used by: cattle, agro, organic etc.   */
+/* ===================================== */
+
+.section-container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 45px;
+}
+
+.section-container h2{
+    font-size: 28px;
+    color: #1b5e20;
+    margin-bottom: 12px;
+}
+
+.section-container h3{
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #2e7d32;
+}
+
+.section-container p{
+    font-size: 15.5px;
+    line-height: 1.9;
+    color: #2f2f2f;
+    margin-bottom: 15px;
+    max-width: 950px;
+}
+
+.section-container ul{
+    margin-left: 22px;
+    margin-bottom: 15px;
+}
+
+.section-container ul li{
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+/* Info cards */
+.info-grid{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 24px;
+}
+
+.info-card{
+    padding: 22px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #e8f5e9, #f1f8f4);
+    border: 1px solid #cfd8dc;
+}
+
+.info-card h4{
+    margin-bottom: 8px;
+    color: #1b5e20;
+}
+
+.info-card p{
+    font-size: 14.5px;
+    margin: 0;
+}
