@@ -27,7 +27,7 @@ body {
             rgba(0, 0, 0, 0.55),
             rgba(0, 0, 0, 0.55)
         ),
-        url("/images/Gemini_Generated_Image_b6jhgpb6jhgpb6jh.png") center / cover no-repeat;  
+        url("../images/Gemini_Generated_Image_b6jhgpb6jhgpb6jh.png") center / cover no-repeat;  
     display: flex;
     align-items: center;
     justify-content: center;
@@ -694,6 +694,7 @@ body {
 }
 ... other hero backgrounds ...
 */
+
 
 
 
